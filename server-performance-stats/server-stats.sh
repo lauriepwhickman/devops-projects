@@ -45,7 +45,7 @@ printf "Disk Percentage Free: $DISK_PERCENTAGE_FREE% \n"
 echo
 
 echo "##########################"
-echo "# Top 5 Proccesses by CPU#"
+echo "# Top 5 Processes by CPU#"
 echo "##########################"
 
 ps aux --sort -%cpu | head -n 6 | awk '{print $1 "\t" $2 "\t" $3 "\t" $11}'
@@ -53,7 +53,7 @@ ps aux --sort -%cpu | head -n 6 | awk '{print $1 "\t" $2 "\t" $3 "\t" $11}'
 echo
 
 echo "##########################"
-echo "# Top 5 Proccesses by RAM#"
+echo "# Top 5 Processes by RAM#"
 echo "##########################"
 
 ps aux --sort -%mem | head -n 6 | awk '{print $1 "\t" $2 "\t" $4 "\t" $11}'
